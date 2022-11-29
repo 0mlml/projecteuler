@@ -3,7 +3,7 @@
 namespace sieve {
 
 std::vector<long long> constSieve(long long n) {
-  const long long MAX_SIZE = 1000001;
+  const long long MAX_SIZE = 2000001;
 
   std::vector<long long> isprime(MAX_SIZE, true);
   std::vector<long long> prime;

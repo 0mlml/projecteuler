@@ -16,7 +16,7 @@ long sumOfSquares(int n) {
   return sum;
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char const *argv[]) {
   std::cout << squareOfSum(100) - sumOfSquares(100) << std::endl;
   return 0;
 }

@@ -16,7 +16,7 @@ std::string numStr =
     "91256071760605886116467109405077541002256983155200055935729725716362695618"
     "82670428252483600823257530420752963450";
 
-int main(int argc, char **argv) {
+int main(int argc, char const *argv[]) {
   unsigned long long max = 0;
   for (int i = 0; i < numStr.length() - 13; i++) {
     unsigned long long prod = 1;

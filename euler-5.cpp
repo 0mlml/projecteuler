@@ -1,7 +1,8 @@
 #include <iostream>
 
-// Find the lowest positive number that can be divided evenly by all numbers 1-20
-int main(int argc, char **argv) {
+// Find the lowest positive number that can be divided evenly by all numbers
+// 1-20
+int main(int argc, char const *argv[]) {
   for (int i = 1; i < pow(10, 10); i++) {
     bool w = true;
     for (int j = 1; j <= 20; j++) {
@@ -10,9 +11,9 @@ int main(int argc, char **argv) {
         break;
       }
     }
-	if (w) {
-		std::cout << i << std::endl;
-		break;
-	}
+    if (w) {
+      std::cout << i << std::endl;
+      break;
+    }
   }
 }

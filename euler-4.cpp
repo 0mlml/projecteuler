@@ -11,7 +11,7 @@ bool isPalindromeProduct(int a, int b) {
 }
 
 // Find largest palindrome product of 3 digit numbers
-int main(int argc, char **argv) {
+int main(int argc, char const *argv[]) {
   int max = 0;
   for (int i = 999; i > 99; i--)
     for (int j = 999; j > 99; j--)

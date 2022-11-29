@@ -1,7 +1,7 @@
 #include <iostream>
 
 // Find sum of fibonacci terms not exceeding four million
-int main(int argc, char **argv) {
+int main(int argc, char const *argv[]) {
   int n1 = 0, n2 = 1, sum = 0;
   while (n2 <= 4 * pow(10, 6)) {
     int t = n1;
