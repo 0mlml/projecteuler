@@ -74,7 +74,6 @@ void simpleSieve(int limit, std::vector<long long> &prime) {
 }
 
 std::vector<long long> segmentedSieve(long long n) {
-
   int limit = floor(sqrt(n)) + 1;
   std::vector<long long> prime;
   prime.reserve(limit);
@@ -84,8 +83,6 @@ std::vector<long long> segmentedSieve(long long n) {
   int high = 2 * limit;
 
   while (low < n) {
-    std::cout << "Iterating " << low << "-" << high << "\n";
-
     if (high >= n)
       high = n;
 
@@ -111,5 +108,20 @@ std::vector<long long> segmentedSieve(long long n) {
   }
 
   return prime;
+}
+
+std::vector<bool> simpleSieveRetAll(long long n) {
+  int limit = floor(sqrt(n)) + 1;
+  std::vector<bool> isPrime(n, true);
+
+  for (int p = 2; p * p < limit; p++) {
+
+    if (isPrime[p] == true) {
+      for (int i = p * p; i < limit; i += p)
+        isPrime[i] = false;
+    }
+  }
+
+  return isPrime;
 }
 } // namespace sieve

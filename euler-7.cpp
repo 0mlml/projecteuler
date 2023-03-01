@@ -1,4 +1,4 @@
-#include "cpputil/sieveoferatosthenes.cpp"
+#include "cpputil/sieveoferatosthenes.hpp"
 #include <iostream>
 
 
